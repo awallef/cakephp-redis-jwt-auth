@@ -1,5 +1,5 @@
 {
-  "name": "awallef/cakephp-redisjwtauth",
+  "name": "awallef/cakephp-redis-jwt-auth",
   "description": "CakePHP redis jwt auth",
   "type": "cakephp-plugin",
   "require": {
