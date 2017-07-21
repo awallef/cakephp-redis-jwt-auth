@@ -1,0 +1,26 @@
+{
+  "name": "awallef/cakephp-redisjwtauth",
+  "description": "CakePHP redis jwt auth",
+  "type": "cakephp-plugin",
+  "require": {
+    "php": ">=5.5.9",
+    "cakephp/cakephp": "^3.3",
+    "admad/cakephp-jwt-auth": "~2.1.0",
+    "firebase/php-jwt": "~4.0",
+    "awallef/cakephp-redis":"^3.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Awallef\\RJA\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Awallef\\RJA\\Test\\": "tests",
+      "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+    }
+  }
+}
