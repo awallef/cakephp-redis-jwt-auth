@@ -17,7 +17,7 @@ class BasicAuthenticate extends CakeBasicAuthenticate
   {
     $token = JWT::encode(['sub' => $user['id'], 'exp' =>  time() + $event->getSubject()->config()['storage']['redis']['duration']], Security::salt());
     $event->getSubject()->response = $event->getSubject()->response->withHeader('X-Token', $token);
-    $user['x-token'] = $token;
+    $user['X-Token'] = $token;
     $event->result = $user;
   }
 
